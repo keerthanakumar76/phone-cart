@@ -1,0 +1,38 @@
+.header{
+  height: 70px;
+  position: static;
+  top: 0;
+  width: 100%;
+  background-color: royalblue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+.header h2{
+  font-size: 28px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cart-icon{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.fa-sharp{
+  font-size:24px;
+}
+.header p{
+  position: absolute;
+  top: -13%;
+  left: 95%;
+  width: 25px;
+  border-radius: 50%;
+  text-align: center;
+  color: aquamarine;
+  font-weight: 700;
+  border-color: aquamarine;
+  border-width: 1px;
+  border-style: solid;
+}

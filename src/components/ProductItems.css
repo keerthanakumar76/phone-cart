@@ -1,0 +1,121 @@
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  width: 70%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.185s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.img-details {
+  display: flex;
+  align-items: center;
+}
+
+.img-div {
+  height: 84px;
+  width: 82px;
+  overflow: hidden;
+  margin-right: 1rem;
+}
+
+.img-div img {
+  width: 100%;
+  height: auto;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.details h2, .details p {
+  margin: 0;
+  padding: 0.2rem 0;
+  width: 100%;
+}
+
+.details h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.details p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.removebtn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: gray;
+  color: rgb(10, 9, 9);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  width: 80px;
+  text-align: center;
+  align-self: flex-start;
+}
+
+.removebtn:hover {
+  background-color: darkgrey;
+}
+
+.card button {
+  padding: 0.5rem 1rem;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: rgb(51, 214, 255);
+  color: white;
+}
+
+.card div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
+.card div:nth-child(2) button {
+  margin: 0 0.5rem;
+}
+
+.card div:nth-child(2) span {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .card {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .img-details {
+      width: 100%;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+  }
+
+ 
+}
